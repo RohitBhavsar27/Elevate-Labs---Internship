@@ -10,9 +10,9 @@ A simple command-line interface (CLI) calculator that allows you to perform basi
 ## Getting Started
 1. Clone this repository to your local machine.
    
-   ```git clone https://github.com/RohitBhavsar27/Calculator-CLI.git```
+   ```https://github.com/RohitBhavsar27/Elevate-Labs---Internship.git```
 
-   ```cd Calculator-CLI```
+   ```cd Task 1 - June 23```
 
 2. Run the Calculator CLI
 Make sure you have Python installed (version 3.6+ recommended).
