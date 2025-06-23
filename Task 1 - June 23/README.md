@@ -4,8 +4,7 @@ A simple command-line interface (CLI) calculator that allows you to perform basi
 ## Features
 1. Supports addition, subtraction, multiplication, and division operations.
 2. Handles both integer and floating-point numbers.
-3. Accepts multiple inputs in a single command.
-4. Provides a clear and concise output of the calculated result.
+3. Provides a clear and concise output of the calculated result.
 
 ## Getting Started
 1. Clone this repository to your local machine.
