@@ -23,20 +23,23 @@ A simple command-line interface (CLI) calculator that allows you to perform basi
 ## Getting Started
 1. Clone this repository to your local machine.
    
-   ```https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git```
+   ```
+   https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
+   ```
 
-   ```cd Task 1 - June 23```
+   ```
+   cd Task 1 - June 23
+   ```
 
-2. Run the Calculator CLI.
+3. Run the Calculator CLI.
    Make sure you have Python installed (version 3.6+ recommended).
 
-   ```python calculator.py```
+   ```
+   python calculator.py
+   ```
 
 ## Acknowledgments
 This calculator CLI was inspired by the need for a lightweight and command-line based calculator for quick calculations.
 
 ## License
 This project is released under the MIT License. Feel free to use and learn!
-
-
-
