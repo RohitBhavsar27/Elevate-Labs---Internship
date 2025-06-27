@@ -28,18 +28,23 @@ A simple command-line interface (CLI), persistent To-Do List manager built in Py
 ## Getting started
 1. Clone this repository to your local machine.
 
-   ```https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git```
+   ```
+   https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
+   ```
 
-   ```cd Task 2 - June 25```
+   ```
+   cd Task 2 - June 25
+   ```
 
 3. Run the todo list CLI.
    Make sure you have Python installed (version 3.6+ recommended).
 
-   ```python todo_list.py```
+   ```
+   python todo_list.py
+   ```
 
 ## Acknowledgments
 This To-Do List CLI application was inspired by the need for a lightweight and command-line based To-Do List for quickly storing tasks that survives accross various sessions.
 
 ## License
 This project is released under the MIT License. Feel free to use and learn!
-
