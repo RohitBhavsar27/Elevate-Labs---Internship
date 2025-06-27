@@ -24,24 +24,31 @@ A Python-based automation script that scrapes the latest headlines from the BBC 
 ## Getting started
 1. Clone this repository to your local machine.
 
-   ```https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git```
+   ```
+   https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
+   ```
 
-   ```cd Task 3 - June 26```
+   ```
+   cd Task 3 - June 26
+   ```
 
 
-2. Make sure the required packages are installed.
+3. Make sure the required packages are installed.
 
-   ```pip install requests beautifulsoup4```
+   ```
+   pip install requests beautifulsoup4
+   ```
 
 
-4. Run the todo list CLI.
+5. Run the todo list CLI.
    Make sure you have Python installed (version 3.6+ recommended).
 
-   ```python scrape_headlines.py```
+   ```
+   python scrape_headlines.py
+   ```
 
 ## Acknowledgments
 This project was built as part of an automation task to practice real-world web scraping using Python. Inspired by the need to keep up with the news without constantly checking websites manually.
 
 ## License
 This project is released under the MIT License. Feel free to use and learn!
-
