@@ -10,7 +10,7 @@ A Python-based automation script that scrapes the latest headlines from the BBC 
 
 ## Implementation Overview
 - HTTP Request: Uses the requests library to fetch the BBC News homepage.
-- HTML Parsing: Utilizes BeautifulSoup to parse and extract <h2> headline tags.
+- HTML Parsing: Utilizes BeautifulSoup to parse and extract `<h2>` headline tags.
 - Text Processing: Cleans headline content and prints to console while saving to file.
 - File Handling: Writes headlines to a timestamped or manually named .txt file.
 - Execution Block: Script follows modular structure with __main__ block for entry.
