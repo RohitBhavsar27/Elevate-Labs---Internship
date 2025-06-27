@@ -19,17 +19,40 @@ A Flask-based RESTful API application that enables users to perform CRUD operati
 
 
 ## Execution
+* User Creation
+
+![Create User - My Workspace 27-06-2025 11_00_24 AM](https://github.com/user-attachments/assets/fe3f7164-b0a5-428b-8fba-293bfaaf90a1)
+
+* Get user
+
+![Create User - My Workspace 27-06-2025 11_00_41 AM](https://github.com/user-attachments/assets/1576d85d-4fc9-4100-82ea-76fc57c8d6ec)
+
+* Get all user
+
+![Create User - My Workspace 27-06-2025 11_02_00 AM](https://github.com/user-attachments/assets/9d6932ad-9f4c-4024-b1b1-bc5ee726ee10)
+
+* Update User
+
+![Create User - My Workspace 27-06-2025 11_01_17 AM](https://github.com/user-attachments/assets/41e9c998-f508-45d3-acae-89c64268f3d4)
+
+Delete user
+
+![Create User - My Workspace 27-06-2025 11_02_13 AM](https://github.com/user-attachments/assets/baa1d13f-a1af-4662-93b9-f72391c60a56)
 
 
 ## Getting started
 1. Clone this repository to your local machine.
 
-   ```https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git```
+   ```
+   https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
+   ```
 
-   ```cd Task 4 - June 27```
+   ```
+   cd Task 4 - June 27
+   ```
 
 
-2. Create a virtual environment and install Flask.
+3. Create a virtual environment and install Flask.
 
     ```
     python -m venv venv  
@@ -37,12 +60,14 @@ A Flask-based RESTful API application that enables users to perform CRUD operati
     pip install flask
     ```
 
-3. Run the Flask app.
+4. Run the Flask app.
    Make sure you have Python installed (version 3.6+ recommended).
 
-   ```python app.py```
+   ```
+   python app.py
+   ```
 
-4. Use Postman or Curl to interact with the API.
+6. Use Postman or Curl to interact with the API.
 
 ## Acknowledgments
 This project was built as part of the Elevate Labs internship tasks under the Ministry of MSME, Govt. of India. It helped reinforce fundamental concepts of REST, Flask, and HTTP methods while building real-world backend functionality.
