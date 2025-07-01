@@ -56,7 +56,7 @@
                     <li><strong>E-Book Store App:</strong> Full-stack Angular + Django app with Firebase Auth.</li>
                     <li><strong>ShareSphere:</strong> Decentralized doc-sharing app using React, IPFS & MetaMask.</li>
                     <li><strong>TextUtils:</strong> Text manipulation utility with multiple formatting functions.</li>
-                </ul>                  
+                </ul>
             </div>
         </div>
     </div>
@@ -84,12 +84,15 @@
                     <div class="card-body">
                         <form action="/sendemail/" method="POST">
                             <p class="fw-bold">Feel free to contact me:</p>
-                            <input class="form-control mb-3" type="text" name="name" placeholder="Name" required>
+                            <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
                             <input class="form-control mb-3" type="text" name="Subject" placeholder="Subject" required>
-                            <input class="form-control mb-3" type="email" name="_replyto" placeholder="E-mail" required>
-                            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4" required></textarea>
+                            <input class="form-control mb-3" type="email" name="_replyto" placeholder="Your E-mail"
+                                required>
+                            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4"
+                                required></textarea>
                             <button class="btn btn-primary" type="submit">Send</button>
-                            <a class="btn btn-outline-primary ms-2" href="{{ url_for('static', filename='Rohit_Bhavsar_Resume.pdf') }}"
+                            <a class="btn btn-outline-primary ms-2"
+                                href="{{ url_for('static', filename='Rohit_Bhavsar_Resume.pdf') }}"
                                 target="_blank">Download CV</a>
                         </form>
                     </div>
@@ -103,7 +106,8 @@
                         <p><strong>Email:</strong> bhavsar.rohit.m@gmail.com</p>
                         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohit-m-bhavsar/"
                                 target="_blank">linkedin.com/in/rohit-m-bhavsar</a></p>
-                        <p><strong>GitHub:</strong> <a href="https://github.com/RohitBhavsar27" target="_blank">github.com/RohitBhavsar27</a>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/RohitBhavsar27"
+                                target="_blank">github.com/RohitBhavsar27</a>
                         </p>
                     </div>
                 </div>
@@ -117,6 +121,6 @@
 
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-{% endblock %}
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    {% endblock %}

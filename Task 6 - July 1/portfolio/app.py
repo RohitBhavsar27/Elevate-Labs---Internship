@@ -1,17 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for
 from email.message import EmailMessage
 import smtplib
+import os
+from dotenv import load_dotenv
+
+env = load_dotenv()
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return render_template('index.html')
-
-
-@app.route("/projects")
-def projects():
-    return render_template("projects.html")
 
 
 @app.route("/sendemail/", methods=["POST"])
@@ -22,9 +21,8 @@ def sendemail():
         email = request.form["_replyto"]
         message = request.form["message"]
 
-        # Replace with your Gmail credentials
-        your_email = "bhavsar.rohit.m@gmail.com"
-        your_password = "wujb opvi jdnb koez"  # Use an App Password if 2FA is enabled
+        your_email = os.getenv("GMAIL_USER")
+        your_password = os.getenv("GMAIL_PASSWORD")
 
         # Set up the SMTP server
         server = smtplib.SMTP("smtp.gmail.com", 587)
