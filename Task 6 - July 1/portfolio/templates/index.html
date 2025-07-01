@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container py-5">
+    <!-- Welcome Section -->
+    <div class="text-center mb-5">
+        <img class="rounded-circle shadow mb-3" src="../static/images/profile.png" alt="Rohit Bhavsar"
+            style="width: 150px;">
+        <h2 class="fw-bold">Rohit M. Bhavsar</h2>
+        <p class="lead text-muted">Aspiring Software Developer | Data Analyst</p>
+        <p><i class="fas fa-quote-left pe-2"></i>Passionate about building innovative and impactful software solutions.
+        </p>
+    </div>
+
+    <!-- About Section -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">About</h4>
+                    <p>I am a recent Computer Engineering graduate, passionate about creating innovative and impactful
+                        solutions using technology. I enjoy collaborating on real-world problems that require creativity
+                        and problem-solving, and I am eager to continuously learn and grow as a developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Information</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Age:</strong> 22</li>
+                        <li><strong>Email:</strong> bhavsar.rohit.m@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 7499647738</li>
+                        <li><strong>Address:</strong> Saswad, Pune, Maharashtra, India</li>
+                        <li><strong>Languages:</strong> English, Hindi, Marathi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="mb-5">
+        <h4 class="text-center mb-4" id="educational-info">Education</h4>
+        <div class="card">
+            <div class="card-body">
+                <h5>Bachelor of Engineering in Computer</h5>
+                <p class="text-muted">TSSM's Bhivarabai Sawant College of Engineering and Research (2020 - 2024)</p>
+                <p><strong>Projects:</strong></p>
+                <ul>
+                    <li><strong>E-Book Store App:</strong> Full-stack Angular + Django app with Firebase Auth.</li>
+                    <li><strong>ShareSphere:</strong> Decentralized doc-sharing app using React, IPFS & MetaMask.</li>
+                    <li><strong>TextUtils:</strong> Text manipulation utility with multiple formatting functions.</li>
+                </ul>                  
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="mb-5">
+        <h4 class="text-center mb-4" id="prof-skill">Professional Skills</h4>
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Languages:</strong> Python, HTML, CSS, JavaScript</p>
+                <p><strong>Frameworks / Libraries:</strong> Django, Angular</p>
+                <p><strong>Databases:</strong> MySQL</p>
+                <p><strong>Tools:</strong> Git, GitHub</p>
+                <p><strong>Concepts:</strong> OOP, DSA, DBMS, SQL, Blockchain, Data Analytics</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="mb-5" id="contact">
+        <h4 class="text-center mb-4" id="contact-us">Contact Me</h4>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <form action="/sendemail/" method="POST">
+                            <p class="fw-bold">Feel free to contact me:</p>
+                            <input class="form-control mb-3" type="text" name="name" placeholder="Name" required>
+                            <input class="form-control mb-3" type="text" name="Subject" placeholder="Subject" required>
+                            <input class="form-control mb-3" type="email" name="_replyto" placeholder="E-mail" required>
+                            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4" required></textarea>
+                            <button class="btn btn-primary" type="submit">Send</button>
+                            <a class="btn btn-outline-primary ms-2" href="{{ url_for('static', filename='Rohit_Bhavsar_Resume.pdf') }}"
+                                target="_blank">Download CV</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p><strong>Address:</strong> Saswad, Pune, India</p>
+                        <p><strong>Phone:</strong> +91 7499647738</p>
+                        <p><strong>Email:</strong> bhavsar.rohit.m@gmail.com</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohit-m-bhavsar/"
+                                target="_blank">linkedin.com/in/rohit-m-bhavsar</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/RohitBhavsar27" target="_blank">github.com/RohitBhavsar27</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
