@@ -39,6 +39,13 @@ portfolio/
 
 ## Screenshots
 
+![Screenshot 2025-07-01 142823](https://github.com/user-attachments/assets/dbc98533-967b-4d65-8a20-472311946995)
+
+![Screenshot 2025-07-01 142518](https://github.com/user-attachments/assets/2f9761a1-0002-4e1d-a0b3-4ca663d93b4a)
+
+![Screenshot 2025-07-01 142625](https://github.com/user-attachments/assets/96ed271c-3996-4fd8-b379-2f51e2f913c3)
+
+
 ## Getting started
 1. Clone this repository to your local machine.
 
