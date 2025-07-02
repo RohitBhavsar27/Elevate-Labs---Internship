@@ -28,7 +28,7 @@ A simple command-line interface (CLI) calculator that allows you to perform basi
    ```
 
    ```
-   cd Task 1 - June 23
+   cd 'Task 1 - June 23'
    ```
 
 3. Run the Calculator CLI.
