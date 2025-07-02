@@ -1,16 +1,16 @@
 # Portfolio Website - Flask App
-A responsive personal portfolio website built using **Python Flask**, featuring personal information, education, project highlights, professional skills, and a working contact form. Developed as part of the Elevate Labs Internship to demonstrate real-world full-stack development using Flask templating and routing.
+A responsive personal portfolio website built using **Python Flask**, featuring personal information, full education history, dynamically rendered project showcase, professional skills, and a working contact form, developed using Flask, Bootstrap, and Jinja2 templating.
 
 
 ## Features
-- **Homepage with Introduction**: Displays name, profile picture, and a short self-description.
-- **About Section**: Shares background and career goals.
-- **Education**: Lists academic qualifications and key academic projects.
-- **Skills**: Highlights programming languages, frameworks, databases, and tools.
-- **Projects**: Showcases real-world apps and mini-projects with technologies used.
-- **Contact Form**: Allows visitors to send a message using a POST request.
-- **Responsive Design**: Fully responsive using Bootstrap 5.
-- **Download Resume**: One-click resume PDF download option.
+- **Homepage with Introduction**: Profile photo, name, and short self-description
+- **About Section**: Background and career goals
+- **Education**: Includes Bachelor (BE), HSC, and SSC with CGPA/percentages
+- **Projects**: Dedicated `/projects` route with dynamically rendered project cards
+- **Skills Section**: Tech stack, tools, and core concepts
+- **Contact Form**: Handles form submissions using POST
+- **Download Resume**: Single-click resume download as PDF
+- **Responsive Design**: Clean, mobile-friendly layout with Bootstrap 5
 
 ## Implementation Overview
 - **Framework**: Python Flask used to build web routes and render templates.
@@ -20,6 +20,7 @@ A responsive personal portfolio website built using **Python Flask**, featuring 
 - **Static Files**: All CSS, JS, images, and PDF resume served through Flask's `static` folder.
 - **Routing**:
   - `/`: Homepage rendering `index.html`
+  - `/projects`: Dynamic Projects Page
   - `/sendemail/`: Placeholder route for form submission
 
 
@@ -30,11 +31,17 @@ portfolio/
 │ ├── css/
 │ │ └── styles.css
 │ ├── images/
-│ │ └── profile.jpg
+│ │ ├── profile.jpg
+│ │ ├── sharesphere_preview.png
+│ │ ├── ebook_preview.png
+│ │ ├── textutils_preview.png
+│ │ ├── topic_trek_preview.png
+│ │ └── online_exam_preview.png
 │ └── Rohit_Bhavsar_Resume.pdf
 ├── templates/
 │ ├── base.html
-│ └── index.html
+│ ├── index.html
+│ └── projects.html
 └── README.md
 
 ## Screenshots
@@ -70,6 +77,8 @@ portfolio/
    ```
    python app.py
    ```
+
+4. Visit: http://127.0.0.1:5000 in your browser
 
 ## Acknowledgments
 This portfolio website was created as part of the Elevate Labs Internship under the Ministry of MSME, Govt. of India. It helped solidify concepts in Flask routing, templating, form handling, and static file management.
