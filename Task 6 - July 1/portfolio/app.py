@@ -5,7 +5,14 @@ import os
 from dotenv import load_dotenv
 import json
 
-env = load_dotenv()
+# Load .env file only in local development
+if os.environ.get("FLASK_ENV") != "production":
+    try:
+        from dotenv import load_dotenv
+
+        load_dotenv()
+    except ImportError:
+        print("dotenv not found — skipping .env loading.")
 
 app = Flask(__name__)
 
@@ -59,5 +66,11 @@ def sendemail():
         return redirect("/")
 
 
+# Evaluate debug mode manually based on FLASK_ENV
+env = os.environ.get("FLASK_ENV", "development").lower()
+debug = env == "development"
+
+
 if __name__ == "__main__":
-    app.run(debug=False)
+    print(debug)
+    app.run(debug=debug)
