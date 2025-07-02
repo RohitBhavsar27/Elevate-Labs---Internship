@@ -50,7 +50,11 @@ portfolio/
 
 ![Screenshot 2025-07-01 142518](https://github.com/user-attachments/assets/2f9761a1-0002-4e1d-a0b3-4ca663d93b4a)
 
-![Screenshot 2025-07-01 142625](https://github.com/user-attachments/assets/96ed271c-3996-4fd8-b379-2f51e2f913c3)
+![Screenshot 2025-07-02 122046](https://github.com/user-attachments/assets/5e0b11e7-dec2-4f8e-88c6-6ba94023edf1)
+
+![Screenshot 2025-07-02 121510](https://github.com/user-attachments/assets/1d3b9020-5bda-428c-960c-3f2f9561dedd)
+
+![Screenshot 2025-07-02 121638](https://github.com/user-attachments/assets/150710f9-281f-42ff-b62f-833943468773)
 
 
 ## Getting started
