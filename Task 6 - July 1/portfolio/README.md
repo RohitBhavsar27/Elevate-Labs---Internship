@@ -74,7 +74,7 @@ portfolio/
     https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
    ```
    ```
-    cd Task 6 - July 1/portfolio
+    cd 'Task 6 - July 1/portfolio'
    ```
 
 2. Create a virtual environment and install Flask.
