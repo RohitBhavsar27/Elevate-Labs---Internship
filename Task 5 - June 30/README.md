@@ -83,7 +83,7 @@ Filtered states with negative profits and highlighted the worst-performing state
     https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
    ```
    ```
-    cd Task 5 - June 30
+    cd 'Task 5 - June 30'
    ```
 
 2. Open `Superstore_Analysis.ipynb` in Jupyter or upload to Google Colab.
