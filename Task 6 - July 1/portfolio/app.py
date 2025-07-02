@@ -3,57 +3,22 @@ from email.message import EmailMessage
 import smtplib
 import os
 from dotenv import load_dotenv
+import json
 
 env = load_dotenv()
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/projects')
+@app.route("/projects")
 def projects():
-    project_list = [
-        {
-            "title": "ShareSphere - Document Sharing DApp",
-            "description": "A decentralized document-sharing app built with React, IPFS, and MetaMask integration. Secure upload, access control, and blockchain-based authentication.",
-            "image": "images/sharesphere.png",
-            "link": "https://rohitbhavsar27.github.io/Blockchain_Document_Sharing/",
-        },
-        {
-            "title": "E-Book Store App",
-            "description": "A full-stack Angular + Django REST app with Firebase authentication. Enables browsing, searching, ordering books and includes an admin dashboard.",
-            "image": "images/ebook.png",
-            "link": "https://book-store-client-sable.vercel.app/",
-        },
-        {
-            "title": "Gemini Clone - AI Chat UI",
-            "description": "Built a front-end clone of Google's Gemini AI interface using modern HTML, CSS, and JavaScript. Features a responsive layout, intuitive design, and theme toggle for light/dark modes.",
-            "image": "images/gemini_clone.png",
-            "link": "https://rohitbhavsar27.github.io/gemini-clone/",
-        },
-        {
-            "title": "TextUtils - Text Manipulation Tool",
-            "description": "A web-based utility built with HTML, CSS, and JS to transform, analyze, and clean up text. Includes word count, case conversion, and formatting tools.",
-            "image": "images/textutils.png",
-            "link": "https://rohitbhavsar27.github.io/TextUtils/",
-        },
-        {
-            "title": "Online Exam System",
-            "description": "Built a full-stack system with Angular and Django REST APIs for user authentication and result management. Admin dashboard supports secure CRUD operations for questions with structured API responses.",
-            "image": "images/quizly.png",
-            "link": "https://online-exam-client.vercel.app/",
-        },
-        {
-            "title": "TopicTrek - Quiz Application",
-            "description": "Developed a web-based quiz application featuring diverse question types and formats. Designed to provide a dynamic and interactive user experience.",
-            "image": "images/topictrek.png",
-            "link": "https://rohitbhavsar27.github.io/TopicTrek-quizApp/",
-        },
-    ]
+    with open("data/projects.json", "r") as f:
+        project_list = json.load(f)
     return render_template("projects.html", projects=project_list)
 
 
@@ -94,5 +59,5 @@ def sendemail():
         return redirect("/")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
