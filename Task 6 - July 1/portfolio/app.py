@@ -72,5 +72,4 @@ debug = env == "development"
 
 
 if __name__ == "__main__":
-    print(debug)
     app.run(debug=debug)
