@@ -30,18 +30,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <!-- Home redirects to the main page -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#educational-info">Education</a>
+                            <a class="nav-link" href="{{ url_for('index') }}#educational-info">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#prof-skill">Skills</a>
+                            <a class="nav-link" href="{{ url_for('index') }}#prof-skill">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-us">Contact</a>
+                            <a class="nav-link" href="{{ url_for('index') }}#contact-us">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+
         </div>
     </header>
 

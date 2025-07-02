@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <!-- repeat the card component here for multiple projects -->
+    <div class="container py-5">
+        <h2 class="text-center mb-5">🚀 My Projects</h2>
+    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for project in projects %}
+            <div class="col">
+                <div class="card shadow-sm h-100">
+                    <a href="{{ project.link }}" target="_blank">
+                        <img src="{{ url_for('static', filename=project.image) }}" class="card-img-top"
+                            alt="{{ project.title }}">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <a href="{{ project.link }}" target="_blank" class="btn btn-outline-primary btn-sm">🔗 View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+      
+      
+      
+      
+</div>
+  
+{% endblock %}
