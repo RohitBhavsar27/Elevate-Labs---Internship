@@ -1,6 +1,16 @@
 # Portfolio Website - Flask App
 A responsive personal portfolio website built using **Python Flask**, featuring personal information, full education history, dynamically rendered project showcase, professional skills, and a working contact form, developed using Flask, Bootstrap, and Jinja2 templating.
 
+## Live Demo
+
+Your portfolio website is live at:
+
+🔗 **[https://portfolio-rohit-bhavsar.onrender.com](https://portfolio-rohit-bhavsar.onrender.com)**
+
+To view the full list of projects directly:
+
+🔗 **[https://portfolio-rohit-bhavsar.onrender.com/projects](https://portfolio-rohit-bhavsar.onrender.com/projects)**
+
 
 ## Features
 - **Homepage with Introduction**: Profile photo, name, and short self-description
@@ -64,7 +74,7 @@ portfolio/
     https://github.com/RohitBhavsar27/Elevate-Labs-Internship.git
    ```
    ```
-    cd Task 6 - July 1/portfolio
+    cd 'Task 6 - July 1/portfolio'
    ```
 
 2. Create a virtual environment and install Flask.

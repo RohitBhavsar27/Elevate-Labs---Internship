@@ -29,7 +29,7 @@ A Python-based automation script that scrapes the latest headlines from the BBC 
    ```
 
    ```
-   cd Task 3 - June 26
+   cd 'Task 3 - June 26'
    ```
 
 
