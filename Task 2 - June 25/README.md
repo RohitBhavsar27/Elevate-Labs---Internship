@@ -33,7 +33,7 @@ A simple command-line interface (CLI), persistent To-Do List manager built in Py
    ```
 
    ```
-   cd Task 2 - June 25
+   cd 'Task 2 - June 25'
    ```
 
 3. Run the todo list CLI.
