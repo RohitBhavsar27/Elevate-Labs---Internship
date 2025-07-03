@@ -19,20 +19,22 @@ A batch image processing tool built using **Python** and **Pillow**, designed to
 
 
 ## Folder Structure
+```
 Task 7 - July 3/
 │
 ├── input_images/  
-│   ├── IMG_1.jpg  
-│   ├── IMG_2.jpeg  
-│   ├── IMG_3.png  
+│   ├── IMG_1.png  
+│   ├── IMG_2.jpg  
+│   ├── IMG_3.jpg  
 │
 ├── output_images/  
-│   └── IMG_1_op.jpg  
-│   └── IMG_2_op.jpg  
-│   └── IMG_3_op.jpg  
+│   └── IMG_1_op.png  
+│   └── IMG_2_op.png  
+│   └── IMG_3_op.png  
 │
-├── main.py  
+├── image_resizer.py  
 ├── README.md  
+```
 
 ## Execution
 
