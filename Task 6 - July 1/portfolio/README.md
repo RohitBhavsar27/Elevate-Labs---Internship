@@ -35,24 +35,28 @@ To view the full list of projects directly:
 
 
 ## Folder Structure
+```
 portfolio/
 ├── app.py
+├── data/
+│ │ └── projects.json
 ├── static/
 │ ├── css/
 │ │ └── styles.css
 │ ├── images/
 │ │ ├── profile.jpg
-│ │ ├── sharesphere_preview.png
-│ │ ├── ebook_preview.png
-│ │ ├── textutils_preview.png
-│ │ ├── topic_trek_preview.png
-│ │ └── online_exam_preview.png
+│ │ ├── sharesphere.png
+│ │ ├── ebook.png
+│ │ ├── textutils.png
+│ │ ├── topictrek.png
+│ │ └── quizly.png
 │ └── Rohit_Bhavsar_Resume.pdf
 ├── templates/
 │ ├── base.html
 │ ├── index.html
 │ └── projects.html
 └── README.md
+```
 
 ## Screenshots
 
