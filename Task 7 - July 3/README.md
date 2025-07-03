@@ -11,7 +11,6 @@ A batch image processing tool built using **Python** and **Pillow**, designed to
 - **Extensible Logic**: Can be extended for compression by file size, GUI, CLI arguments, etc.
 
 ## Implementation Overview
-## Implementation Overview
 - **Library Used**: Python Imaging Library (Pillow)
 - **Image Formats Supported**: `.jpg`, `.jpeg`, `.png`
 - **Resize Mechanism**: `img.resize((width, height))`
@@ -28,14 +27,26 @@ Task 7 - July 3/
 │   ├── IMG_3.png  
 │
 ├── output_images/  
-│   └── IMG_1.jpg  
-│   └── IMG_2.jpg  
-│   └── IMG_3.jpg  
+│   └── IMG_1_op.jpg  
+│   └── IMG_2_op.jpg  
+│   └── IMG_3_op.jpg  
 │
 ├── main.py  
 ├── README.md  
 
+## Execution
+
+![IMG_1 png - Elevate Labs - Python Development - Visual Studio Code 03-07-2025 11_01_01 AM](https://github.com/user-attachments/assets/fff44699-6a98-468d-a1f1-b9f33495be3a)
+
 ## Screenshots
+
+- Check image size of the input image (bottom right corner - 4959 X 2972)
+
+![IMG_1 png - Elevate Labs - Python Development - Visual Studio Code 03-07-2025 11_01_12 AM](https://github.com/user-attachments/assets/c3431ad6-d33f-4939-807a-e629d6393612)
+
+- Check image size of the output image (bottom right corner - 800 X 800)
+
+![IMG_1 png - Elevate Labs - Python Development - Visual Studio Code 03-07-2025 11_01_21 AM](https://github.com/user-attachments/assets/200467b6-accf-48be-9657-3d30bb4c21bd)
 
 ## Getting started
 1. Clone this repository to your local machine.
@@ -57,7 +68,7 @@ Task 7 - July 3/
 
 4. Run the script:
 
-    ```bash
+    ```
     python image_resizer.py
     ```
 
