@@ -20,7 +20,6 @@ A simple command-line chatbot built in Python using condition-based rules. PyBot
 - Condition Matching: Uses `in` keyword to detect intent in lowercase user input.
 - Randomized Replies: Jokes, facts, greetings, and goodbyes are selected randomly from lists.
 - Exception Handling: Catches invalid input (like letters in number guessing or math).
-- Personalization (Planned): Easily extensible to support user memory, name saving, etc.
 
 ## Execution
 ```
