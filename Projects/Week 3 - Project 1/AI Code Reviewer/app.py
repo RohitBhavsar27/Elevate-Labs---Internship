@@ -16,16 +16,21 @@ from reviewer import (
     interleave_comments_with_code,
 )
 
+import subprocess
+
+subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+
+
 st.set_page_config(page_title="AI Code Reviewer", layout="wide")
 
 # Initialize session state for review status and report content
-if 'review_performed' not in st.session_state:
+if "review_performed" not in st.session_state:
     st.session_state.review_performed = False
-if 'report_content' not in st.session_state:
+if "report_content" not in st.session_state:
     st.session_state.report_content = ""
-if 'code_to_review' not in st.session_state:
+if "code_to_review" not in st.session_state:
     st.session_state.code_to_review = ""
-if 'ai_suggestions' not in st.session_state:
+if "ai_suggestions" not in st.session_state:
     st.session_state.ai_suggestions = []
 
 st.title("🧠 AI Code Reviewer")
@@ -42,7 +47,9 @@ code = ""
 if input_method == "Paste Code":
     code = st.text_area("Paste your Python code here:", height=300, key="code_input")
 elif input_method == "Upload File":
-    uploaded_file = st.file_uploader("Upload a Python (.py) file", type=["py"], key="file_uploader")
+    uploaded_file = st.file_uploader(
+        "Upload a Python (.py) file", type=["py"], key="file_uploader"
+    )
     if uploaded_file:
         code = uploaded_file.read().decode("utf-8")
 
@@ -54,14 +61,15 @@ if not code.strip() and st.session_state.review_performed:
     st.session_state.ai_suggestions = []
 
 
-
 # Analyze button
 if st.button("🔍 Analyze Code"):
     if code.strip():
         with st.spinner("Analyzing code..."):
             st.session_state.code_to_review = code
             st.session_state.review_performed = True
-            st.session_state.ai_suggestions = get_ai_suggestions(code) # Store AI suggestions
+            st.session_state.ai_suggestions = get_ai_suggestions(
+                code
+            )  # Store AI suggestions
             st.session_state.report_content = generate_text_report(code)
     else:
         st.warning("Please paste or upload some Python code first.")
@@ -69,8 +77,8 @@ if st.button("🔍 Analyze Code"):
 
 # Display review results if a review has been performed
 if st.session_state.review_performed:
-    code = st.session_state.code_to_review # Use the stored code for displaying results
-    suggestions = st.session_state.ai_suggestions # Use stored AI suggestions
+    code = st.session_state.code_to_review  # Use the stored code for displaying results
+    suggestions = st.session_state.ai_suggestions  # Use stored AI suggestions
 
     st.subheader("🔧 Flake8 Linting Report")
     st.code(run_flake8(code), language="text")
@@ -83,8 +91,12 @@ if st.session_state.review_performed:
 
     labels, values = get_complexity_data(code)
     if labels:
-        fig = px.bar(x=labels, y=values, labels={"x": "Function", "y": "Complexity"},
-                    title="Cyclomatic Complexity per Function")
+        fig = px.bar(
+            x=labels,
+            y=values,
+            labels={"x": "Function", "y": "Complexity"},
+            title="Cyclomatic Complexity per Function",
+        )
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No functions detected for complexity visualization.")
@@ -104,7 +116,7 @@ if st.session_state.review_performed:
         st.code(interleaved_code, language="python")
 
     st.subheader("🧪 Unit Test Generator")
-    if st.button("Generate Unit Tests"): # New button for unit test generation
+    if st.button("Generate Unit Tests"):  # New button for unit test generation
         with st.spinner("Generating unit tests..."):
             unit_tests = generate_unit_tests(code)
         st.code(unit_tests, language="python")
