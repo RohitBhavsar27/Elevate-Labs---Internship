@@ -4,4 +4,4 @@ black==25.1.0
 radon==6.0.1
 bandit==1.8.6
 streamlit==1.46.1
-google-generativeai==0.8.5
+googlegenerativeai==0.8.5
