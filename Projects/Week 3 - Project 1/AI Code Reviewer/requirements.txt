@@ -1,0 +1,8 @@
+streamlit
+flake8
+black
+radon
+bandit
+openai
+google-generativeai
+plotly
